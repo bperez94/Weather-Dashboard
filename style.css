@@ -1,1 +1,11 @@
+h1 {
+    text-align: center;
+}
 
+aside {
+    float: left;
+}
+
+#citySearch {
+    font-weight: bold;
+}
