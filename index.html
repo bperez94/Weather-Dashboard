@@ -14,12 +14,12 @@
 
 <body>
     <aside>
-        <form>
+        <form id="form">
           <div class="form-row">
                 <div class="form-group col-md-8">
                     <label for="citySearch" id="citySearch">Search for a city:</label>
-                        <input type="text" class="form-control" id="searchBar">
-                        <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                        <input type="text" id="inputBox" class="form-c ontrol">
+                        <button type="button" id="submit" class="btn btn-primary btn-sm">Submit</button>
                 </div>
             </div>
         </form>
@@ -36,9 +36,19 @@
     </aside>
     
     <main>
-        <section>
+        <section id="currentCityDis">
             <div class="container">
-                <p>space where current city seacrh info goes</p>
+                <div class="row">
+                    <div class="col-6">
+                        <p>space where current city Search info goes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fiveDay">
+            <div class="container">
+
             </div>
         </section>
     </main>
