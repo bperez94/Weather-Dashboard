@@ -17,40 +17,144 @@
 
 
     <aside>
-        <form id="form">
-          <div class="form-row">
-                <div class="form-group col-md-8">
-                    <label for="citySearch" id="cityId">Search for a city:</label>
-                        <input type="text" id="inputBox" class="form-c ontrol">
-                        <button type="button" id="submit" class="btn btn-primary btn-sm">Submit</button>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <form id="form">
+                        <div class="form-row">
+                            <div class="form-group col-md-8">
+                                <label for="citySearch" id="cityId">Search for a city:</label>
+                                    <input type="text" id="inputBox" class="form-c ontrol">
+                                    <button type="button" id="submit" class="btn btn-primary btn-sm">Submit</button>
+                            </div>
+                        </div>
+                
+                    </form>
+                    <br>
+                    <div class="list-group" id="listGroup"></div>
                 </div>
             </div>
-        </form>
-
-        <br>
-        
-
-        <div class="list-group" id="listGroup">
-          
-        </div>
-                  
+        </div>              
     </aside>
-    
+    <br>
+
     <main>
         <section id="currentCityDis">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                      <h2>Current Day Weather</h2>
-                    </div>
+            <h2>Current Day Weather</h2>
+            <div class="container" id="currentDay">
+                <div class="col">
+                    <div id="date"></div>
+                        <div class="card-deck">
+                            <div class="card">
+                              <img src="#" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h3 class="card-title">WINDSPEED</h3>
+                                <div id="forcast"></div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card-deck">
+                            <div class="card">
+                              <img src="#" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h3 class="card-title">HUMIDITY</h3>
+                                <div id="humidity"></div>
+                              </div>
+                            </div>
+                        </div> 
+                        <div class="card-deck">
+                            <div class="card">
+                              <img src="#" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h3 class="card-title">TEMPURATURE</h3>
+                                <div id="temp"></div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card-deck">
+                            <div class="card">
+                              <img src="#" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h3 class="card-title">iCON</h3>
+                                <div id="icon"></div>
+                              </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-deck">
+                            <div class="card">
+                              <img src="#" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h3 class="card-title">UV</h3>
+                                <div id="uv"></div>
+                              </div>
+                            </div>
+                        </div>
+                       
+                    
                 </div>
             </div>
         </section>
+        <br>
+        <br>
 
         <section id="fiveDay">
-            <div class="container">
-                <div id="forcast"></div>
+           
+            <div class="container" id="fiveDayCast">
+                <H3>Five Day Forecast</H3>
+                <div class="row">
+                    <div class="card-deck">
+                        <div class="card">
+                            <img src="#" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">MON</h3>
+                                    
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="card-deck">
+                        <div class="card">
+                            <img src="#" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">TUE</h3>
+                                    
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-deck">
+                        <div class="card">
+                            <img src="#" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">WED</h3>
+                                    
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-deck">
+                        <div class="card">
+                            <img src="#" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">THU</h3>
+                                    
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-deck">
+                        <div class="card">
+                            <img src="#" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">FRI</h3>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
