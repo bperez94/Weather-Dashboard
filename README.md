@@ -1,32 +1,29 @@
+
+
 # Weather Dashboard
+    
+#Created on 06/27/2020
 
-### Created On 06/27/2020
+# By Brandon Perez
 
-### By Brandon Perez
-
-## Description
+## Description 
 This dashboard allows you to check the waether conditions for whatever city you search for. You simply type the city you want into the search bar and click submit. In the search history section it saves your seach history. Also you can see past and future weather conditions.
-![weather dashboard](images/Screenshot.jpg)
-
-
-## Support 
+    
+## Installation
+N/A
+    
+## Known bugs
+N/A
+    
+## Contact Information
 brandonp940@gmail.com
-
-## Technologies used 
-HTML
-CSS
-JAVASCRIPT
-JQUERY
-
-## Contribution Guidlnes
-https://bperez94.github.io/week6hw/
- 
-
+    
+## Technologies Used 
+HTML, CSS, JAVASCRIPT, JQUERY
+    
+## Contribution
+https://bperez94.github.io/Weather-Dashboard/
+    
 ### License
-
-Copyright(c) 2020 By Brandon Perez
-
-​
-This software is licensed under MIT license.
-
+MIT
 
