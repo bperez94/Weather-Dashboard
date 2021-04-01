@@ -6,6 +6,9 @@
 
 # By Brandon Perez
 
+# Screen Shot
+ <img src = "images\weatherDash.png">
+
 ## Description 
 This dashboard allows you to check the waether conditions for whatever city you search for. You simply type the city you want into the search bar and click submit. In the search history section it saves your seach history. Also you can see past and future weather conditions.
     
