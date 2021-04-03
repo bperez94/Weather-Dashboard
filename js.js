@@ -17,10 +17,12 @@ $(document).ready(function() {
     $(".history").append(li);
   }
 
+  var mykey = config.MY_KEY;
+
   function searchWeather(searchValue) {
     $.ajax({
       type: "GET",
-      url: "http://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&appid=3f17700f7fb492576ad78677b3a57cff&units=imperial",
+      url: "http://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&appid=" + mykey + "&units=imperial",
       dataType: "json",
       success: function(data) {
         // create history link for this search
@@ -59,7 +61,7 @@ $(document).ready(function() {
   function getForecast(searchValue) {
     $.ajax({
       type: "GET",
-      url: "http://api.openweathermap.org/data/2.5/forecast?q=" + searchValue + "&appid=3f17700f7fb492576ad78677b3a57cff&units=imperial",
+      url: "http://api.openweathermap.org/data/2.5/forecast?q=" + searchValue +"&appid=" + mykey + "&units=imperial",
       dataType: "json",
       success: function(data) {
         // overwrite any existing content with title and empty row
