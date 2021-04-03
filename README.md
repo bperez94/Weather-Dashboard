@@ -6,7 +6,6 @@
 
 # By Brandon Perez
 
-# Screen Shot
  <img src = "images\weatherDash.png">
 
 ## Description 
