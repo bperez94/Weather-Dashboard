@@ -16,13 +16,14 @@ $(document).ready(function() {
     var li = $("<li>").addClass("list-group-item list-group-item-action").text(text);
     $(".history").append(li);
   }
-
-  var mykey = config.MY_KEY;
-
+  
+  
+  //const API_KEY = process.env.API_KEY;
+  
   function searchWeather(searchValue) {
     $.ajax({
       type: "GET",
-      url: "http://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&appid=" + mykey + "&units=imperial",
+      url: "http://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&appid=3f17700f7fb492576ad78677b3a57cff&units=imperial",
       dataType: "json",
       success: function(data) {
         // create history link for this search
@@ -61,7 +62,7 @@ $(document).ready(function() {
   function getForecast(searchValue) {
     $.ajax({
       type: "GET",
-      url: "http://api.openweathermap.org/data/2.5/forecast?q=" + searchValue +"&appid=" + mykey + "&units=imperial",
+      url: "http://api.openweathermap.org/data/2.5/forecast?q=" + searchValue +"&appid=3f17700f7fb492576ad78677b3a57cff&units=imperial",
       dataType: "json",
       success: function(data) {
         // overwrite any existing content with title and empty row
@@ -95,7 +96,7 @@ $(document).ready(function() {
   function getUVIndex(lat, lon) {
     $.ajax({
       type: "GET",
-      url: "http://api.openweathermap.org/data/2.5/uvi?appid=7ba67ac190f85fdba2e2dc6b9d32e93c&lat=" + lat + "&lon=" + lon,
+      url: "http://api.openweathermap.org/data/2.5/uvi?appid=3f17700f7fb492576ad78677b3a57cff&lat=" + lat + "&lon=" + lon,
       dataType: "json",
       success: function(data) {
         var uv = $("<p>").text("UV Index: ");
